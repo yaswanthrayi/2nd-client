@@ -46,15 +46,16 @@ const Header = () => {
           <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Left side: Profile and Title with enhanced animations */}
             <div className="flex items-center space-x-4 group transform hover:scale-105 transition-all duration-500 hover:rotate-1">
-              <div className="relative">
-                <img 
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop&crop=face" 
-                  alt="Profile" 
-                  className="w-12 h-12 lg:w-16 lg:h-16 rounded-full object-cover border-2 border-blue-400/60 transform group-hover:scale-110 group-hover:border-blue-300 transition-all duration-500 shadow-xl hover:shadow-blue-400/40 animate-profile-glow"
-                />
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-rotate-slow"></div>
-                <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-30 blur-sm transition-all duration-500"></div>
-              </div>
+              <div className="relative w-12 h-12 lg:w-16 lg:h-16">
+  <img 
+    src="/logo.png" 
+    alt="Profile" 
+    className="w-full h-full rounded-full object-cover scale-110 border-2 border-blue-400/60 transform group-hover:scale-125 group-hover:border-blue-300 transition-all duration-500 shadow-xl hover:shadow-blue-400/40 animate-profile-glow"
+  />
+  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-rotate-slow"></div>
+  <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-30 blur-sm transition-all duration-500"></div>
+</div>
+
               <div className="flex flex-col">
                 <span className="text-white text-lg lg:text-2xl font-bold tracking-wider group-hover:text-blue-200 transition-all duration-500 font-sans">
                   <span className="bg-gradient-to-r from-blue-300 via-white to-purple-300 bg-clip-text text-transparent animate-text-shine">MOON WALKER</span>
