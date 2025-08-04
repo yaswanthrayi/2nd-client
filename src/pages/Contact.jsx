@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
+import { FaWhatsapp } from 'react-icons/fa';
 import { 
   MessageSquare, 
   Facebook, 
@@ -55,9 +56,9 @@ const Contact = () => {
     { 
       name: 'WhatsApp', 
       href: 'https://wa.me/15551234567', 
-      icon: MessageSquare, 
+      icon: FaWhatsapp, 
       gradient: 'from-emerald-400 to-teal-500',
-      text: '+1 (555) 123-4567',
+      text: '+91 9652222002',
       description: 'Quick chat support'
     },
     { 
@@ -70,15 +71,15 @@ const Contact = () => {
     },
     { 
       name: 'Instagram', 
-      href: 'https://instagram.com/moonwalkerdance', 
+      href: 'https://www.instagram.com/chakry_choreographer/', 
       icon: Instagram, 
       gradient: 'from-pink-500 to-purple-600',
-      text: '@moonwalkerdance',
+      text: '@chakry_choreographer',
       description: 'See our moves'
     },
     { 
       name: 'YouTube', 
-      href: 'https://youtube.com/moonwalkerdance', 
+      href: 'https://www.youtube.com/channel/UCQxKPY_WhW8kd1dieOct2xw', 
       icon: Youtube, 
       gradient: 'from-red-500 to-pink-600',
       text: 'Moon Walker Dance Studio',
@@ -86,18 +87,18 @@ const Contact = () => {
     },
     { 
       name: 'Phone', 
-      href: 'tel:+15551234567', 
+      href: 'tel:+919652222002',
       icon: Phone, 
       gradient: 'from-cyan-400 to-blue-500',
-      text: '+1 (555) 123-4567',
+      text: '+91 9652222002',
       description: 'Call us directly'
     },
     { 
       name: 'Email', 
-      href: 'mailto:info@moonwalkerdance.com', 
+      href: 'mailto:moonwalkerdancestudio@gmail.com', 
       icon: Mail, 
       gradient: 'from-violet-400 to-purple-600',
-      text: 'info@moonwalkerdance.com',
+      text: 'chakry@gmail.com',
       description: 'Send us a message'
     },
   ];
@@ -116,14 +117,15 @@ const Contact = () => {
       {/* Hero Section with Dynamic Parallax */}
       <div className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-            alt="Contact Us"
-            className="w-full h-full object-cover transform scale-110"
-            style={{
-              transform: `translateY(${scrollY * 0.5}px) scale(1.1)`,
-            }}
-          />
+        <img
+          src="/contact-img.jpg"
+          alt="Contact Us"
+          className="w-full h-full object-cover transform scale-110"
+          style={{
+            transform: `translateY(${scrollY * 0.5}px) scale(1.1)`,
+          }}
+        />
+
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-blue-900/50 to-purple-900/70"></div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
         </div>
@@ -236,9 +238,9 @@ const Contact = () => {
                     </div>
                     <div className="text-lg">
                       <p className="font-bold text-white text-xl mb-2">Visit Our Studio</p>
-                      <p className="group-hover:text-cyan-300 transition-colors duration-300">123 Dance Street</p>
-                      <p className="group-hover:text-cyan-300 transition-colors duration-300">New York, NY 10001</p>
-                      <p className="group-hover:text-cyan-300 transition-colors duration-300">United States</p>
+                      <p className="group-hover:text-cyan-300 transition-colors duration-300">11-8-15/1,Huda Colony</p>
+                      <p className="group-hover:text-cyan-300 transition-colors duration-300">Hyderabad,5300035</p>
+                      <p className="group-hover:text-cyan-300 transition-colors duration-300">Telangana</p>
                     </div>
                   </div>
                 </div>
@@ -258,7 +260,7 @@ const Contact = () => {
                 </h3>
                 <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-xl border-2 border-gray-700/50 hover:border-cyan-400/50 transition-all duration-500 group">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1273080949327!2d-74.00594798459418!3d40.71278337933041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e44bb85%3A0x7e36a4e4e72c3a65!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1643723400000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2354719055627!2d78.5351132!3d17.3606642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb98f2f4c91e59%3A0xd136d40015d698de!2sMoon%20Walker%20Dance%20Studio!5e0!3m2!1sen!2sin!4v1692627289846!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -280,16 +282,8 @@ const Contact = () => {
                   </div>
                   <div className="space-y-2 text-gray-300">
                     <div className="flex justify-between items-center hover:text-cyan-300 transition-colors duration-300">
-                      <span>Monday - Friday:</span>
-                      <span className="font-semibold">9:00 AM - 10:00 PM</span>
-                    </div>
-                    <div className="flex justify-between items-center hover:text-cyan-300 transition-colors duration-300">
-                      <span>Saturday:</span>
-                      <span className="font-semibold">10:00 AM - 8:00 PM</span>
-                    </div>
-                    <div className="flex justify-between items-center hover:text-cyan-300 transition-colors duration-300">
-                      <span>Sunday:</span>
-                      <span className="font-semibold">12:00 PM - 6:00 PM</span>
+                      <span>Monday - Saturday:</span>
+                      <span className="font-semibold">9:00 AM - 12:00 PM</span>
                     </div>
                   </div>
                 </div>
