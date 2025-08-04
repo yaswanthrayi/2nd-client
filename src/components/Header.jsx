@@ -114,13 +114,13 @@ const Header = () => {
               isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
             }`}
           >
-            <div className="py-4 space-y-2 bg-gray-900/50 backdrop-blur-sm rounded-xl mt-4 border border-gray-700/50">
+            <div className="py-4 space-y-2 bg-black/70 backdrop-blur-sm rounded-xl mt-4 border border-gray-700/50 px-4">
               {navItems.map((item, index) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`group flex items-center px-6 py-4 rounded-lg text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all duration-300 transform hover:translate-x-2 hover:scale-105 relative overflow-hidden ${
+                  className={`group flex items-center px-4 py-3 rounded-lg text-gray-300 hover:text-yellow-300 hover:bg-gray-800/60 transition-all duration-300 transform hover:translate-x-2 hover:scale-105 relative overflow-hidden ${
                     isMenuOpen ? 'animate-slide-in-mobile' : ''
                   }`}
                   style={{
@@ -130,7 +130,7 @@ const Header = () => {
                   }}
                 >
                   <div className="absolute left-0 top-0 w-1 h-0 bg-gradient-to-b from-yellow-400 to-orange-400 group-hover:h-full transition-all duration-300"></div>
-                  <span className="font-serif text-lg font-medium relative z-10 group-hover:text-yellow-300 transition-colors duration-300">
+                  <span className="font-serif text-lg font-medium relative z-10">
                     {item.name}
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-yellow-400/5 to-orange-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -154,31 +154,31 @@ const Header = () => {
           from { opacity: 0; transform: translateY(-10px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        
+
         @keyframes slide-in-mobile {
-          from { 
-            opacity: 0; 
-            transform: translateX(-30px) scale(0.95); 
+          from {
+            opacity: 0;
+            transform: translateX(-30px) scale(0.95);
           }
-          to { 
-            opacity: 1; 
-            transform: translateX(0) scale(1); 
+          to {
+            opacity: 1;
+            transform: translateX(0) scale(1);
           }
         }
-        
+
         .animate-fade-in {
           animation: fade-in 0.6s ease-out forwards;
         }
-        
+
         .animate-slide-in-mobile {
           animation: slide-in-mobile 0.5s ease-out forwards;
         }
-        
+
         @media (max-width: 768px) {
           .animate-fade-in {
             animation: fade-in 0.4s ease-out forwards;
           }
-          
+
           .animate-slide-in-mobile {
             animation: slide-in-mobile 0.4s ease-out forwards;
           }
