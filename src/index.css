@@ -29,11 +29,19 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'quarters';
+  src: url('src/assets/fonts/quarters-demo.regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @import "tailwindcss";
 @theme{
   --font-alphatron: Alphatron, "sans-serif";
+}
+@theme{
+  --font-quarters: quarters, "sans-serif";
 }
 @theme{
   --font-mexon: Mexon;
