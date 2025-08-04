@@ -53,14 +53,14 @@ const Contact = () => {
   }, []);
 
   const contactLinks = [
-    { 
-      name: 'WhatsApp', 
-      href: 'https://wa.me/15551234567', 
-      icon: FaWhatsapp, 
-      gradient: 'from-emerald-400 to-teal-500',
-      text: '+91 9652222002',
-      description: 'Quick chat support'
-    },
+    {
+    name: 'WhatsApp',
+    href: 'https://wa.me/919652222002',
+    icon: FaWhatsapp,
+    gradient: 'from-emerald-400 to-teal-500',
+    text: '+91 9652222002',
+    description: 'Quick chat support',
+  },
     { 
       name: 'Facebook', 
       href: 'https://facebook.com/moonwalkerdance', 
