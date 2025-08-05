@@ -63,10 +63,10 @@ const Contact = () => {
   },
     { 
       name: 'Facebook', 
-      href: 'https://facebook.com/moonwalkerdance', 
+      href: 'https://www.facebook.com/chakry.choreographer', 
       icon: Facebook, 
       gradient: 'from-blue-500 to-indigo-600',
-      text: '@moonwalkerdance',
+      text: '@chakry.choreographer',
       description: 'Follow our updates'
     },
     { 
@@ -104,7 +104,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 relative overflow-hidden">
+    <div className="min-h-screen w-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse"></div>

@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Classes from './pages/Classes.jsx';
-import Schedule from './pages/Schedule.jsx';
+import Schedule from './pages/Gallery.jsx';
 import Events from './pages/Events.jsx';
 import Contact from './pages/Contact.jsx';
 

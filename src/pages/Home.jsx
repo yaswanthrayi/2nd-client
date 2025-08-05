@@ -42,13 +42,13 @@ const Home = () => {
 
   const stats = [
     {
-      number: "500+",
+      number: "10000+",
       text: "Students trained in the art of dance, mastering rhythm and movement",
       icon: <Crown className="w-8 h-8" />
     },
     {
       number: "50+", 
-      text: "Professional choreographers and instructors with years of experience",
+      text: "With years of experience, our professional choreographers and instructors have completed a wide range of events.",
       icon: <Star className="w-8 h-8" />
     },
     {
@@ -61,26 +61,26 @@ const Home = () => {
   const courses = [
     {
       icon: <Music className="w-8 h-8" />,
-      title: "Hip Hop Fundamentals",
-      description: "Master the basics of hip hop dance with our comprehensive beginner program. Learn foundation moves, rhythm, and style.",
-      features: ["Beginner Friendly", "8 Week Program", "Professional Instructors"],
-      image: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg",
+      title: "Zumba Essentials",
+      description: "Energize your fitness journey with our fun and dynamic beginner Zumba program. Learn easy-to-follow dance routines, improve coordination, and boost your cardio.",
+      features: ["Beginner Friendly", "45 Day Program", "Certified Zumba Instructors"],
+      image: "/zumba-1.jpg",
       gradient: "from-pink-500 via-purple-600 to-indigo-700"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Breaking & B-Boying",
-      description: "Dive into the world of breaking with power moves, toprock, downrock, and freezes. Build strength and style.",
-      features: ["Intermediate Level", "Battle Ready", "Strength Training"],
-      image: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg",
+      title: "Western Dance Foundations",
+      description: "Step into the rhythm of Western dance with a blend of stylized footwork, fluid motion, and expressive choreography. Develop grace, control, and confidence.",
+      features: ["Intermediate Level", "Performance Ready", "Technique & Conditioning"],
+      image: "/western-2.png",
       gradient: "from-yellow-400 via-orange-500 to-red-600"
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Contemporary Fusion",
-      description: "Blend contemporary dance with hip hop elements. Express emotions through movement and artistic storytelling.",
-      features: ["Creative Expression", "All Levels", "Performance Focus"],
-      image: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg",
+      title: "MJ Style Dance",
+      description: "Master the iconic moves of Michael Jackson — from the moonwalk to sharp isolations and dynamic footwork. Learn to embody his rhythm, precision, and stage charisma.",
+      features: ["Signature MJ Moves", "All Levels", "Performance & Musicality Focus"],
+      image: "/mj.jpg",
       gradient: "from-emerald-400 via-teal-500 to-cyan-600"
     },
     {
@@ -88,7 +88,7 @@ const Home = () => {
       title: "Advanced Choreography",
       description: "Take your skills to the next level with complex routines, advanced techniques, and performance preparation.",
       features: ["Advanced Level", "Choreography", "Performance Team"],
-      image: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg",
+      image: "/advance.jpg",
       gradient: "from-violet-500 via-purple-600 to-fuchsia-700"
     }
   ];
@@ -132,7 +132,7 @@ const Home = () => {
   }, [discoColors.length]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-black relative overflow-hidden">
+    <div className="min-h-screen flex flex-col bg-black relative overflow-hidden pt-16">
       {/* Animated Disco Background */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         {/* Main disco gradient background */}
@@ -195,60 +195,25 @@ const Home = () => {
                       <div className="absolute top-32 right-20 w-16 h-16 bg-pink-500 rounded-full opacity-30 animate-disco-light-delayed blur-lg"></div>
                       <div className="absolute bottom-32 left-1/3 w-24 h-24 bg-cyan-400 rounded-full opacity-25 animate-disco-light-reverse blur-lg"></div>
                     </div>
-                    
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center text-white space-y-6 px-4 max-w-5xl">
-                        <div className="flex items-center justify-center mb-4">
-                          <Disc3 className="w-12 h-12 text-yellow-400 animate-spin mr-4" />
-                          <h1 className={`text-4xl md:text-8xl font-black leading-tight bg-gradient-to-r ${discoColors[currentColorIndex]} bg-clip-text text-transparent animate-disco-text transition-all duration-2000 tracking-wider`}>
-                            {image.title}
-                          </h1>
-                          <Music className="w-12 h-12 text-pink-400 animate-bounce ml-4" />
-                        </div>
-                        <p className="text-lg md:text-3xl opacity-90 font-medium tracking-wide animate-fade-up max-w-4xl mx-auto leading-relaxed">
-                          {image.subtitle}
-                        </p>
-                        <div className="mt-8 flex justify-center space-x-4">
-                          <Sparkles className="w-8 h-8 text-yellow-400 animate-sparkle-dance" />
-                          <Zap className="w-8 h-8 text-pink-400 animate-pulse" />
-                          <Sparkles className="w-8 h-8 text-cyan-400 animate-sparkle-dance-delayed" />
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Enhanced Navigation Buttons */}
-          <button
-            className={`absolute left-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r ${discoColors[currentColorIndex]} backdrop-blur-sm text-white p-4 rounded-full hover:scale-125 transition-all duration-500 animate-disco-glow md:p-4 p-3 border-2 border-white/30`}
-            onClick={scrollPrev}
-          >
-            <ChevronLeft size={28} className="md:w-7 md:h-7 w-5 h-5" />
-          </button>
-          <button
-            className={`absolute right-4 top-1/2 transform -translate-y-1/2 bg-gradient-to-r ${discoColors[(currentColorIndex + 1) % discoColors.length]} backdrop-blur-sm text-white p-4 rounded-full hover:scale-125 transition-all duration-500 animate-disco-glow md:p-4 p-3 border-2 border-white/30`}
-            onClick={scrollNext}
-          >
-            <ChevronRight size={28} className="md:w-7 md:h-7 w-5 h-5" />
-          </button>
-
-          {/* Enhanced Dots Indicator */}
-          <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
-            {heroImages.map((_, index) => (
-              <button
-                key={index}
-                className={`transition-all duration-500 rounded-full border-2 border-white/50 ${
-                  index === selectedIndex 
-                    ? `w-12 h-4 bg-gradient-to-r ${discoColors[currentColorIndex]} scale-125 animate-pulse` 
-                    : 'w-4 h-4 bg-white/40 hover:bg-white/60 hover:scale-110'
-                }`}
-                onClick={() => emblaApi?.scrollTo(index)}
-              />
-            ))}
-          </div>
+{/* Enhanced Navigation Buttons */}
+<button
+  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm text-white p-4 rounded-full hover:scale-125 transition-all duration-500 md:p-4 p-3 border-2 border-white/30"
+  onClick={scrollPrev}
+>
+  <ChevronLeft size={28} className="text-white md:w-7 md:h-7 w-5 h-5" />
+</button>
+<button
+  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm text-white p-4 rounded-full hover:scale-125 transition-all duration-500 md:p-4 p-3 border-2 border-white/30"
+  onClick={scrollNext}
+>
+  <ChevronRight size={28} className="text-white md:w-7 md:h-7 w-5 h-5" />
+</button>
         </div>
 
         {/* Enhanced Stats Section */}

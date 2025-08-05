@@ -36,9 +36,9 @@ const Footer = () => {
               <ul className="space-y-3 text-sm md:text-base mt-6">
                 {[
                   { name: 'Home', href: '/' },
-                  { name: 'About', href: '/about' },
+                  { name: 'About', href: '/About' },
                   { name: 'Events', href: '/events' },
-                  { name: 'Schedule', href: '/schedule' },
+                  { name: 'Gallery', href: '/Gallery' },
                   { name: 'Contact', href: '/contact' },
                 ].map((link, index) => (
                   <li key={index} className="transform hover:translate-x-2 transition-all duration-300" style={{ animationDelay: `${index * 100}ms` }}>
@@ -92,7 +92,7 @@ const Footer = () => {
               {/* Social Icons */}
               <div className="flex gap-3 mt-8 justify-center md:justify-start">
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/chakry.choreographer" 
                   className="p-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-110 hover:rotate-12 shadow-lg hover:shadow-2xl hover:shadow-blue-500/50 animate-bounce-in"
                 >
                   <FaFacebookF className="text-base md:text-lg" />
