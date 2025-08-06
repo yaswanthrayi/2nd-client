@@ -48,7 +48,7 @@ const Home = () => {
     },
     {
       number: "50+", 
-      text: "With years of experience, our professional choreographers and instructors have completed a wide range of events.",
+      text: "our professional choreographers and instructors have completed a wide range of events.",
       icon: <Star className="w-8 h-8" />
     },
     {
@@ -200,20 +200,6 @@ const Home = () => {
               ))}
             </div>
           </div>
-
-{/* Enhanced Navigation Buttons */}
-<button
-  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm text-white p-4 rounded-full hover:scale-125 transition-all duration-500 md:p-4 p-3 border-2 border-white/30"
-  onClick={scrollPrev}
->
-  <ChevronLeft size={28} className="text-white md:w-7 md:h-7 w-5 h-5" />
-</button>
-<button
-  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm text-white p-4 rounded-full hover:scale-125 transition-all duration-500 md:p-4 p-3 border-2 border-white/30"
-  onClick={scrollNext}
->
-  <ChevronRight size={28} className="text-white md:w-7 md:h-7 w-5 h-5" />
-</button>
         </div>
 
         {/* Enhanced Stats Section */}

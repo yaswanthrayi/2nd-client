@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md'
+import { FaUserShield } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -152,20 +154,28 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
         <div className="text-center pt-12 mt-12 border-t border-gray-600/50">
-          <div className="bg-gray-800/50 backdrop-blur-sm rounded-full px-6 py-3 inline-block shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105">
-            <div className="flex items-center justify-center gap-2 text-gray-300 text-sm md:text-base">
-              <span>© {new Date().getFullYear()}</span>
-              <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-              <span className="font-serif text-white font-bold tracking-wide">MOON WALKER DANCE STUDIO</span>
-              <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-              <span>All rights reserved.</span>
-            </div>
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-full px-6 py-3 inline-block shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+          <div className="flex items-center justify-center gap-2 text-gray-300 text-sm md:text-base">
+            <span>© {new Date().getFullYear()}</span>
+            <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+            <span className="font-serif text-white font-bold tracking-wide">MOON WALKER DANCE STUDIO</span>
+            <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+            <span>All rights reserved.</span>
           </div>
         </div>
       </div>
-
+      {/* Admin Panel Icon Button - Fully Bottom Center */}
+      <div className="w-full flex justify-center items-center mt-8 mb-2">
+        <Link
+          to="/admin"
+          className="flex items-center justify-center bg-gradient-to-r from-yellow-400 to-orange-400 text-black rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-500 transition-all duration-300 hover:scale-110 border-2 border-yellow-500 p-3"
+          title="Admin Panel"
+        >
+          <FaUserShield className="text-xl" />
+        </Link>
+      </div>
+      </div>
       <style jsx>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(20px); }
@@ -210,6 +220,8 @@ const Footer = () => {
           }
         }
       `}</style>
+      
+      
     </footer>
   )
 }
