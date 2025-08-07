@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const ADMIN_PHONE = "9392980823"; // Set your phone
-const ADMIN_PASSWORD = "12345678"; // Set your password
+const ADMIN_PHONE = "9652222002"; // Set your phone
+const ADMIN_PASSWORD = "chakrymaster2002"; // Set your password
 
 const AdminLogin = () => {
   const [phone, setPhone] = useState("");

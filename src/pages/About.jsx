@@ -31,10 +31,10 @@ const About = () => {
   }, []);
 
   const stats = [
-    { icon: Users, number: '1000+', label: 'Happy Dancers', color: 'from-cyan-400 to-blue-500' },
+    { icon: Users, number: '10000+', label: 'Happy Dancers', color: 'from-cyan-400 to-blue-500' },
     { icon: Star, number: '10+', label: 'Years Experience', color: 'from-yellow-400 to-orange-500' },
     { icon: Award, number: '50+', label: 'Awards Won', color: 'from-pink-400 to-rose-500' },
-    { icon: Heart, number: '1000+', label: 'Dreams Fulfilled', color: 'from-purple-400 to-indigo-500' }
+    { icon: Heart, number: '10000+', label: 'Dreams Fulfilled', color: 'from-purple-400 to-indigo-500' }
   ];
 
   const features = [

@@ -3,6 +3,8 @@ import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from 'react-icons/fa'
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md'
 import { FaUserShield } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import Developer from './Developer'; // adjust path if needed
+
 
 const Footer = () => {
   return (
@@ -220,8 +222,7 @@ const Footer = () => {
           }
         }
       `}</style>
-      
-      
+        <Developer />
     </footer>
   )
 }
