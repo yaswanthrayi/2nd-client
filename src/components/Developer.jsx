@@ -19,14 +19,14 @@ const Developer = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="bg-gray-900/80 backdrop-blur-md rounded-xl p-6 shadow-md transition-all duration-500 border border-gray-600/30 text-center">
             <p className="text-gray-300 text-sm md:text-base">
-              This website is made by{' '}
-              <button
-                onClick={() => setShowModal(true)}
-                className="text-yellow-400 font-semibold hover:text-orange-400 transition-colors duration-300 underline"
-              >
-                YASH
-              </button>
-            </p>
+  This website is made by{' '}
+  <span
+    onClick={() => setShowModal(true)}
+    className="cursor-pointer text-yellow-400 underline hover:text-orange-400 transition-colors duration-300"
+  >
+    YASH
+  </span>
+</p>
             <p className="text-gray-500 text-xs md:text-sm mt-1">
               Full Stack Developer & UI/UX Designer
             </p>
